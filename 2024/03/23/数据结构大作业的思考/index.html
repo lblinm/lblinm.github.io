@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="lblinm的博客">
+    <meta property="og:type" content="website">
+    <meta name="description" content="lblinm的博客">
+    <meta name="keyword"  content="lblinm, 大二, CS专业">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        数据结构大作业的思考 - lblinm blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    
+
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> coding </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>lblinm</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archive">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%80%89%E9%A2%98%E5%92%8C%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="toc-text">一、选题和需求分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%B3%BB%E7%BB%9F%E9%80%BB%E8%BE%91"><span class="toc-text">二、系统逻辑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%8A%80%E6%9C%AF%E6%A0%88%E5%92%8C%E5%B7%A5%E5%85%B7"><span class="toc-text">三、技术栈和工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">四、相关算法和数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">数据结构</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%88%86%E5%B7%A5%E5%8D%8F%E4%BD%9C"><span class="toc-text">四、分工协作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%84%E4%BC%B0%E8%BF%87%E7%A8%8B"><span class="toc-text">预估过程</span></a></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> coding </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        数据结构大作业的思考
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2024-03-23 14:57:14</span></span>
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h2 id="一、选题和需求分析"><a href="#一、选题和需求分析" class="headerlink" title="一、选题和需求分析"></a>一、选题和需求分析</h2><p>我分析的是短视频推荐系统。基本需求有：</p>
+<ol>
+<li>爬取&#x2F;模拟视频信息并存储</li>
+<li>模拟用户和其点击观看行为（点赞、评分、收藏..）</li>
+<li>分析某用户的相似群体</li>
+<li>给某用户推荐视频</li>
+<li>预测某视频热度变化</li>
+<li>视频聚类（具有相似观看用户）</li>
+<li>用户聚类（具有相似观看兴趣）</li>
+</ol>
+<p>我认为我们的项目可以实现一个<strong>模拟器</strong>而不是可以使用的工具（基本离线），所有的算法集成在软件里面，用户自己操作软件模拟数据、查看某用户某视频相关信息和聚类分析。</p>
+<p>重点是推荐功能，初期可以选择一种推荐算法，在完成整个推荐系统后，再搭建其它不同推荐算法，然后用指标呈现不同算法的准确度、效率等。</p>
+<blockquote>
+<p>如基于协同过滤的算法(基于用户&#x2F;物品&#x2F;-矩阵分解的协同过滤)、基于内容的推荐 …</p>
+</blockquote>
+<h2 id="二、系统逻辑"><a href="#二、系统逻辑" class="headerlink" title="二、系统逻辑"></a>二、系统逻辑</h2><p><img src="/img/%E6%9E%B6%E6%9E%84%E5%9B%BE.png" alt="架构图"></p>
+<p>项目采用 MVC 模式</p>
+<p>项目文件结构（部分）</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">project/</span><br><span class="line">│</span><br><span class="line">├── main.py                    <span class="comment"># 主应用程序文件</span></span><br><span class="line">├── ui/</span><br><span class="line">│   ├── mainwindow.ui          <span class="comment"># 主窗口界面设计文件（事件处理、交互）</span></span><br><span class="line">│</span><br><span class="line">├── controllers/</span><br><span class="line">│   ├── maincontroller.py      <span class="comment"># 主控制器文件()</span></span><br><span class="line">│</span><br><span class="line">├── views/</span><br><span class="line">│   ├── mainwindow.py          <span class="comment"># 主窗口视图文件</span></span><br><span class="line">│</span><br><span class="line">├── models/</span><br><span class="line">│   ├── recommend              <span class="comment"># 推荐</span></span><br><span class="line">│       ├── generateCandidate  <span class="comment"># 召回阶段</span></span><br><span class="line">│           ├── CF             <span class="comment"># 协同过滤</span></span><br><span class="line">│           ├── Model          <span class="comment"># 基于内容推荐</span></span><br><span class="line">│       ├── sorting            <span class="comment"># 排序阶段（粗排、精排）</span></span><br><span class="line">│   ├── popular                <span class="comment"># 视频热度预测</span></span><br><span class="line">│   ├── cluster                <span class="comment"># 聚类</span></span><br><span class="line">│</span><br><span class="line">├── data/</span><br><span class="line">│   ├── users                  <span class="comment"># 用户信息</span></span><br><span class="line">│   ├── videos                 <span class="comment"># 视频信息</span></span><br><span class="line">│</span><br><span class="line">├── resources/</span><br><span class="line">│</span><br><span class="line">├── docs/</span><br><span class="line">│   ├── <span class="built_in">record</span>.md</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、技术栈和工具"><a href="#三、技术栈和工具" class="headerlink" title="三、技术栈和工具"></a>三、技术栈和工具</h2><ol>
+<li>前端框架：pyside6 &#x2F; pyqt （和 qt 差不多）</li>
+<li>后端语言：python （用于推荐算法）</li>
+<li>数据库（可能不用）：mysql (还是单纯用 csv 文件存储算了)</li>
+<li>仓库：github</li>
+</ol>
+<h2 id="四、相关算法和数据结构"><a href="#四、相关算法和数据结构" class="headerlink" title="四、相关算法和数据结构"></a>四、相关算法和数据结构</h2><blockquote>
+<p>参考:<a href="https://datawhalechina.github.io/fun-rec/#/ch02/ch2.1/ch2.1.1/usercf">推荐系统算法基础</a>、 <a href="https://www.bilibili.com/video/BV1fd4y1P76M/?p=26&spm_id_from=pageDriver&vd_source=04ce3503e23b3c11cb443fcea82f0fe">推荐系统视频教程</a></p>
+</blockquote>
+<h4 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h4><ol>
+<li>用户表</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;uid&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;xiaoming&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;watch&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;vid&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;score&quot;</span><span class="punctuation">:</span> <span class="number">9</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>视频表</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;vid&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;震惊！&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;tag&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;美女&quot;</span><span class="punctuation">,</span> <span class="string">&quot;美食&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;introduction&quot;</span><span class="punctuation">:</span> <span class="string">&quot;视频简介&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="四、分工协作"><a href="#四、分工协作" class="headerlink" title="四、分工协作"></a>四、分工协作</h2><p>前端：1 名，负责 UI 界面、调用接口渲染<br>后端：2 名，负责算法、数据存储交互</p>
+<h4 id="预估过程"><a href="#预估过程" class="headerlink" title="预估过程"></a>预估过程</h4><ul>
+<li><input disabled="" type="checkbox"> 实现 demo，验证可行性 [1 周]</li>
+<li><input disabled="" type="checkbox"> 爬虫收集视频数据（10w）</li>
+<li><input disabled="" type="checkbox"> 项目框架搭建</li>
+<li><input disabled="" type="checkbox"> 实现用户（1w）及其行为模拟</li>
+<li><input disabled="" type="checkbox"> 实现推荐功能、找相似用户、相似群体功能</li>
+<li><input disabled="" type="checkbox"> 实现视频热度预测功能</li>
+<li><input disabled="" type="checkbox"> 实现视频聚类、用户聚类功能</li>
+<li><input disabled="" type="checkbox"> 实现多种推荐算法</li>
+</ul>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/lblinm">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://giscus.app/client.js"
+    data-repo="aircloud/hexo-aircloud-blog"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkxMjkwNDgyNjg="
+    data-category="Announcements"
+    data-category-id="DIC_kwDOB7EezM4COhKJ"
+    data-mapping="title"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
+
+</html>
